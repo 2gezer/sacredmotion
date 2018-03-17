@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+
+<!-- Jquery begin
+
+$(document).ready(function() {
+});
+ $(function()) {
+});
+
+-->
+
+<html>
+    <head>
+
+        <html lang="de">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>sacred_motion</title>
+        <meta name="sacred_motion" content="Kontakt">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header><img src="images/Logo.png" alt="Logo" ></header>
+                <div id="button-paneel">
+                    <nav>
+                        <button class="panel-button" data-panelId="button1"> BIO </button>
+                        <button class="panel-button" data-panelId="button2"> GALLERIE </button>
+                        <button class="panel-button" data-panelId="button3"> CONTACT </button>
+                    </nav>
+                </div>
+                <div id="content">
+                <div id="bio">BIO</div>
+                <div id="gallerie">Gallerie</div>
+                <div id="contact">Contact</div>
+                </div>
+                </div>
+
+        <script>
+            $(document).ready(function() {
+                $("#button1").hide();
+                $("#button2").hide();
+                $("#button3").hide();
+
+                    $(".panel-button").on("click", function() {
+                        var panelId = $(this).attr('data-panelid');
+                        alert(panelId);
+                        $("#bio").fadeToggle(1000);
+                        $("#gallerie").hide();
+                        $("#contact").hide();
+                    })
+
+
+
+                    })
+
+              });
+
+        </script>
+
+            <section></section>
+            <article></article>
+            <aside></aside>
+            <footer> &copy; A.D. *+- ראש השנ+-* </footer>
+        </div>
+    </body>
+</html>
+<!--
+to do:
+on click auf body-> hide content
+Ajax für Kontaktformular
+Fotos für Gallerie
+Script optimierung-->
